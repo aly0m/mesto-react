@@ -1,0 +1,23 @@
+.page__content {
+  margin: auto;
+  width: 100%;
+  max-width: calc(1280px - 400px);
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+@media (max-width: 1279px) {
+  .page__content {
+    max-width: calc(100% - 100px);
+  }
+}
+
+@media (max-width: 767px) {
+  .page__content {
+    max-width: 100%;
+  }
+}

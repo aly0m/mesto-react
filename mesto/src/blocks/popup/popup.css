@@ -1,0 +1,17 @@
+.popup {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.popup::before {
+  content: "";
+  height: 100vh;
+  background-color:#000000;
+  opacity: 60%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}

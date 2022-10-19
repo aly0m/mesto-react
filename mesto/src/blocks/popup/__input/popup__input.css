@@ -1,0 +1,29 @@
+.popup__input {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 13px;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  }
+  
+  .popup__input:focus {
+    border-color: rgba(0, 0, 0, 0.7);
+    outline: none;
+  }
+  
+  .popup__input:hover {
+    border-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .popup__input::placeholder {
+    color: black;
+  }
+  
+  .popup__input:empty::placeholder {
+    color: #c4c4c4;
+  }

@@ -1,0 +1,14 @@
+.profile__btn_type_add {
+  background-image: url(../../../../images/addButton.svg);
+  background-size: 22px;
+  align-self: center;
+  width: 150px;
+  height: 50px;
+}
+
+@media (max-width: 767px) {
+  .profile__btn_type_add {
+    margin: 36px 0 0;
+    width: 100%;
+  }
+}

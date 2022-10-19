@@ -1,0 +1,10 @@
+.profile__container {
+  margin-left: 30px;
+  margin-right: auto;
+}
+
+@media (max-width: 767px) {
+  .profile__container {
+    margin: 0;
+  }
+}

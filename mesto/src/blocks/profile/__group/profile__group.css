@@ -1,0 +1,5 @@
+.profile__group {
+  display: flex;
+  position: relative;
+  align-items: baseline;
+}

@@ -1,0 +1,19 @@
+.profile__image {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  transition: filter 0.5s;
+}
+
+.profile__image:hover {
+  outline-style: none;
+  filter: opacity(20%);
+}
+
+@media (max-width: 767px) {
+  .profile__image {
+    margin-bottom: 26px;
+  }
+}
