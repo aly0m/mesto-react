@@ -1,7 +1,6 @@
 {
   "name": "mesto",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://aly0m.github.io/mesto-react/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
