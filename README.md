@@ -11,4 +11,4 @@ Interactive page with simple features:
 - React, JSX 🪄
 
 ### Preview
-placeholder for a link
+[Mesto React](https://aly0m.github.io/mesto-react/)
