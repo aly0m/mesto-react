@@ -1,4 +1,3 @@
-import '../index.css';
 import api from '../utils/api';
 import Card from './Card';
 import {useState, useEffect} from 'react';
@@ -10,15 +9,14 @@ const Main = (props) => {
   const [userDescription, setUserDescription] = useState('');
 
   const [cards, setCards] = useState([]);
+
   useEffect(() => {
     api.getInititalCards()
       .then(res => {
         setCards(res)
       })
       .catch(err => console.log(`Error: ${err}`))
-  }, []);
-
-  useEffect(() => {
+    
     api.getUserInfo()
       .then(res => {
         setUserName(res.name)
