@@ -1,5 +1,3 @@
-import '../index.css';
-
 const PopupWithForm = (props) => {
   const className = `popup popup_type_${props.name} ${props.isOpen ? 'popup_opened' : ''}`;
   return (
