@@ -40,14 +40,6 @@
 @import url(./blocks/popup/__input/popup__input.css);
 @import url(./blocks/popup/__input-error/popup__input-error.css);
 @import url(./blocks/popup/__input-error/_active/popup__input-error_active.css);
-/*
-@import url(./blocks/popup/__field/_type/popup__field_type_name.css);
-@import url(./blocks/popup/__field/_type/popup__field_type_place.css);
-@import url(./blocks/popup/__field-error/_line/popup__field-error_line.css);
-@import url(./blocks/popup/__field-error/popup__field-error.css);
-@import url(./blocks/popup/__field-error/_type/popup__field-error_type_name.css);
-@import url(./blocks/popup/__field-error/_type/popup__field-error_type_name-place.css);
-*/
 @import url(./blocks/popup/__btn-submit/popup__btn-submit.css);
 @import url(./blocks/popup/__btn-submit/_inactive/popup__btn-submit_inactive.css);
 @import url(./blocks/popup/__confirm-btn/popup__confirm-btn.css);
