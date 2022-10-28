@@ -27,36 +27,36 @@ class Api {
       .then(this._handleResponse);
   }
 
-  editUserInfo(data) {
+  editUserInfo(name, description) {
     return fetch(`${this._url}/users/me`, {
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
-        name: data['field-name'],
-        about: data['field-job']
+        name: name,
+        about: description
       })
     })
       .then(this._handleResponse);
   }
 
-  editUserAvatar(data) {
+  editUserAvatar(link) {
     return fetch(`${this._url}/users/me/avatar`, {
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
-        avatar: data['field-avatar']
+        avatar: link
       })
     })
       .then(this._handleResponse);
   }
 
-  addCard(data) {
+  addCard(name, link) {
     return fetch(`${this._url}/cards`, {
       method: 'POST',
       headers: this._headers,
       body: JSON.stringify({
-        name: data['field-place'],
-        link: data['field-link']
+        name: name,
+        link: link
       })
     })
       .then(this._handleResponse);
@@ -84,6 +84,10 @@ class Api {
       headers: this._headers
     })
       .then(this._handleResponse);
+  }
+
+  changeLikeCardStatus(cardId, status) {
+    return status ? this.addLike(cardId) : this.removeLike(cardId);
   }
 }
 
