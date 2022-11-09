@@ -1,22 +1,26 @@
-import { useRef, useState } from "react";
-import PopupWithForm from "./PopupWithForm";
+import { useState } from 'react';
+import PopupWithForm from './PopupWithForm';
 
 const AddPlacePopup = (props) => {
   const [name, setName] = useState('');
-  const link = useRef('');
+  const [link, setLink] = useState('');
 
-  const handleChange = (evt) => {
+  const handleNameChange = (evt) => {
     setName(evt.target.value);
+  };
+
+  const handleLinkChange = (evt) => {
+    setLink(evt.target.value)
   };
 
   const handleAddPlaceSubmit = (evt) => {
     evt.preventDefault();
     props.onUpdatePlace({
-      name,
-      link: link.current.value
+      name: name,
+      link: link
     });
     setName('');
-    link.current.value = '';
+    setLink('');
   };
 
   return (
@@ -31,12 +35,12 @@ const AddPlacePopup = (props) => {
     >
       <div className='popup__form-field'>
         <input className='popup__input popup__input_type_name' name='input-card-name' id='card-name'
-               type='text' placeholder='Название' minLength='2' maxLength='30' value={name} onChange={handleChange} required/>
+               type='text' placeholder='Название' minLength='2' maxLength='30' value={name || ''} onChange={handleNameChange} required/>
         <span className='popup__input-error popup__input-error_active' id='card-name-error'/>
       </div>
       <div className='popup__form-field'>
         <input className='popup__input popup__input_type_link' name='input-card-link' id='card-link'
-               type='url' placeholder='Ссылка на картинку' ref={link} required/>
+               type='url' placeholder='Ссылка на картинку' value={link || ''} onChange={handleLinkChange} required/>
         <span className='popup__input-error popup__input-error_active' id='card-link-error'/>
       </div>
     </PopupWithForm>
