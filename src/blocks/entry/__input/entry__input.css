@@ -1,0 +1,16 @@
+.entry__input {
+  height: 27px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid;
+  color: #CCCCCC;
+  margin-bottom: 30px;
+}
+
+.entry__input:focus {
+  outline: none;
+}

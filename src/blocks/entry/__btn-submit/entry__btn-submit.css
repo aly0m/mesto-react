@@ -1,0 +1,16 @@
+.entry__btn-submit {
+  width: 100%;
+  min-height: 50px;
+  margin: 186px 0 15px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: black;
+  background-color: white;
+  transition: filter 1s;
+  cursor: pointer;
+}
+
+.entry__btn-submit:hover {
+  filter: opacity(60%);
+}

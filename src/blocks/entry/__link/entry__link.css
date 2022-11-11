@@ -1,0 +1,10 @@
+.entry__link {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  transition: filter 1s;
+}
+
+.entry__link:hover {
+  filter: opacity(60%);
+} 

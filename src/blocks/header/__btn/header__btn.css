@@ -1,0 +1,13 @@
+.header__btn {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  transition: filter 1s;
+}
+
+.header__btn:hover {
+  filter: opacity(60%);
+}
