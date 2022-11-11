@@ -6,7 +6,7 @@ const PopupWithForm = (props) => {
         <h2 className='popup__title'>{props.title}</h2>
         <form className='popup__form' name={props.name} onSubmit={props.onSubmit} method="POST">
           {props.children}
-          <button className='popup__btn-submit' name={props.name} type='submit'>
+          <button className='popup__btn-submit' name={props.name} id='submit-btn' type='submit'>
             {props.submitText}
           </button>
         </form>
